@@ -26,10 +26,12 @@ Compile code:
 
 gcc -g -o  vigenere vigenere.s
 
-Run Encryption
+Run Encryption Command
+
 ./vigenere encrypt king < file.txt >  output.txt
 
-Run Decryption
+Run Decryption Command
+
 ./vigenere Decrypt king < file.txt >  output.txt
 
 
