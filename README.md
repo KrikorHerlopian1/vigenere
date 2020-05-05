@@ -21,14 +21,19 @@ For this program, I read from stdin and redirect the contents of a file as input
 Similarly, rather than opening a file for output, 
 I write to stdout and redirect this output to a file on the command line. 
 
-Test Cases:
 
-| Method        | Key           | Word             | Result  
+Compile code:
+
+gcc -g -o  vigenere vigenere.s
+
+Run Encryption
+./vigenere encrypt king < file.txt >  output.txt
+
+Run Decryption
+./vigenere Decrypt king < file.txt >  output.txt
+
+
+| Method        | Key           | File.txt content | Output.txt result  
 | ------------- | ------------- | -------------    | -------------    |
 | Encrypt       | KING          | MEETMEATTHECORNER| WMRZYIEMFLEVHYRGF|
 | Decrypt       | KING          | WMRZYIEMFLEVHYRGF| MEETMEATTHECORNER|
-
-
-
-
-
